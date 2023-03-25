@@ -3,13 +3,14 @@ import pyautogui
 from time import sleep
 import os
 
-x_string = input('Insert time in minutes: ')
+#x_string = input('Insert time in minutes: ')
 
 pyautogui.hotkey('command', 'tab')
 
-i = int(x_string)
+#i = int(x_string)
+i = 500
 
-i = i * 60
+#i = i * 60
 
 x = 15
 y = 15
@@ -17,7 +18,14 @@ y = 15
 for i in range(i):
     pyautogui.moveTo(x, y)
     pyautogui.moveTo(x, y)
-    print(i)
-    sleep(1)
-    x = x + 1
-    y = y + 1
+    print(x, y)
+    #sleep(1)
+    #x = x + 1
+    #y = x + 2
+
+    while i < 1000:
+        y = y + 1
+        x = x + 2
+    else:
+        x = x - 1
+        y = y - 2
