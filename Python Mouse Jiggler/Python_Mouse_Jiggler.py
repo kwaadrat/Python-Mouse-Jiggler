@@ -8,24 +8,26 @@ import os
 pyautogui.hotkey('command', 'tab')
 
 #i = int(x_string)
-i = 500
+i = 1
 
 #i = i * 60
 
-x = 15
-y = 15
+x = 640
+y = 480
 
-for i in range(i):
+os.system('clear')
+
+for i in range(5000):
     pyautogui.moveTo(x, y)
     pyautogui.moveTo(x, y)
-    print(x, y)
+    print(x, "x", y)
     #sleep(1)
     #x = x + 1
     #y = x + 2
 
-    while i < 1000:
-        y = y + 1
-        x = x + 2
+    while x > 1500 or y > 1050:
+        y = 20
+        x = 20
     else:
-        x = x - 1
-        y = y - 2
+        x = x + 1
+        y = y + 2
