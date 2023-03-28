@@ -30,4 +30,4 @@ for i in range(5000):
         x = 20
     else:
         x = x + 1
-        y = y + 2
+        y = y + 3
