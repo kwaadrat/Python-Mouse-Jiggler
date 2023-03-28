@@ -4,7 +4,7 @@ from time import sleep
 import os
 
 #x_string = input('Insert time in minutes: ')
-
+sleep(1)
 pyautogui.hotkey('command', 'tab')
 
 #i = int(x_string)
@@ -29,5 +29,7 @@ for i in range(5000):
         y = 20
         x = 20
     else:
-        x = x + 1
-        y = y + 3
+        z = 1
+        x = x + z
+        y = y - z
+    
