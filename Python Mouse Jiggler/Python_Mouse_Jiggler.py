@@ -15,8 +15,6 @@ i = 1
 x = 640
 y = 480
 
-print("\033c\033[3J")
-
 for i in range(5000):
     pyautogui.moveTo(x, y)
     pyautogui.moveTo(x, y)
